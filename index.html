@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8>
+    <title>LeonSoft Tool</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="contacts.css">
+</head>
+<body>
+<div>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="page-people-directory">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5 class="page-title">
+                            <b>Contacts</b>
+                        </h5>
+                        <ul class="nav nav-pills nav-stacked nav-contacts" id="navContacts">
+
+                        </ul>
+                        <br>
+                    </div>
+                    <div class="col-md-9">
+<!--                        <div class="well">-->
+<!--                            <div class="row">-->
+<!--                                <div class="col-md-9">-->
+<!--                                    <input type="text" placeholder="Search people" class="form-control">-->
+<!--                                </div>-->
+<!--                                <div class="col-md-3">-->
+<!--                                    <div class="btn-group" style="display:block">-->
+<!--                                        <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" style="width: 100%; border-radius: 0px; background: white;  color: gray; border-color: #ddd;">Last 10 days <span class="caret"></span>-->
+<!--                                        </button>-->
+<!--                                        <ul class="dropdown-menu bullet pull-right animated pulse margin-top-45">-->
+<!--                                            <li>-->
+<!--                                                <input type="radio" id="ex1_1" name="ex1" value="1" checked>-->
+<!--                                                <label for="ex1_1">Fullname</label>-->
+<!--                                            </li>-->
+<!--                                            <li>-->
+<!--                                                <input type="radio" id="ex1_2" name="ex1" value="2">-->
+<!--                                                <label for="ex1_2">Company</label>-->
+<!--                                            </li>-->
+<!--                                            <li>-->
+<!--                                                <input type="radio" id="ex1_3" name="ex1" value="3">-->
+<!--                                                <label for="ex1_3">Position</label>-->
+<!--                                            </li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <br>-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-md-6">-->
+<!--                                <h3>All Contacts</h3>-->
+<!--                            </div>-->
+<!--                            <div class="col-md-6">-->
+<!--&lt;!&ndash;                                <button type="button" class="btn btn-green btn-raised btn-add-new-contact">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="icon-plus" data-toggle="modal" data-target="#modal-pull-right-add"> Add New Contact</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </button>&ndash;&gt;-->
+<!--                            </div>-->
+<!--                        </div>-->
+                        <div class="list-group contact-group" id="contactList">
+                        </div>
+<!--                        <div class="pull-right">-->
+<!--                            <ul class="pagination pagination-split pagination-sm pagination-contact">-->
+<!--                                <li class="disabled">-->
+<!--                                    <a href="#">-->
+<!--                                        <i class="fa fa-angle-left"></i>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li class="active">-->
+<!--                                    <a href="#">1</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">2</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">3</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">4</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">5</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">-->
+<!--                                        <i class="fa fa-angle-right"></i>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+                    </div>
+                </div>
+                <div class="modal modal-pull-right" data-easein="fadeInRight" data-easeout="fadeOutRight" id="modal-pull-right-add" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog">
+                        <div class="modal-content animated fadeOutRight">
+                            <div class="modal-body">
+                                <div class="row modal-close">
+                                    <div class="col-md-12 padding-bottom-8 padding-top-8 bg-silver">
+                                        <h4 class="pull-left">
+                                            <b>Create New Contact</b>
+                                        </h4>
+                                        <ul class="list-unstyled list-inline text-right">
+                                            <li class="close-right-modal">
+                                                <span class="fa fa-times fa-2x" data-dismiss="modal"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="contact-add-content">
+                                            <form class="form-horizontal tabular-form margin-top-10">
+                                                <div class="form-group">
+                                                    <label for="name" class="col-sm-2 control-label">Name</label>
+                                                    <div class="col-sm-10 tabular-border">
+                                                        <input type="text" class="form-control" id="name" placeholder="Full Name">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email" class="col-sm-2 control-label">Email</label>
+                                                    <div class="col-sm-10 tabular-border">
+                                                        <input type="text" class="form-control" id="email" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="phone" class="col-sm-2 control-label">Phone</label>
+                                                    <div class="col-sm-10 tabular-border">
+                                                        <input type="text" class="form-control" id="phone" placeholder="Phone">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="address" class="col-sm-2 control-label">Address</label>
+                                                    <div class="col-sm-10 tabular-border">
+                                                        <input type="text" class="form-control" id="address" placeholder="Address">
+                                                    </div>
+                                                </div>
+                                                <div class="form-actions">
+                                                    <button type="button" class="btn btn-silver btn-flat">Cancel</button>
+                                                    <button type="button" class="btn btn-green btn-flat">Save Changes</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="contacts.js"></script>
+</body>
+</html>
